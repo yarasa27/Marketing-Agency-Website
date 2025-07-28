@@ -64,3 +64,9 @@ ScrollReveal().reveal(".portfolio__list li", {
   interval: 500,
   delay: 1500,
 });
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+});

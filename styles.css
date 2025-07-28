@@ -189,12 +189,103 @@ nav {
   border-radius: 100%;
 }
 
+.service {
+  background-color: var(--extra-light);
+}
+
+.service__container.section__header {
+  max-width: 750px;
+  margin-inline: auto;
+}
+
+.service__grid {
+  margin-block: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.service__card {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--white);
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.service__card:hover {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service__card:nth-child(1):hover {
+  border-color: #00d5be;
+}
+
+.service__card:nth-child(2):hover {
+  border-color: #ff637e;
+}
+
+.service__card:nth-child(3):hover {
+  border-color: #c27aff;
+}
+
+.service__card:nth-child(4):hover {
+  border-color: #00bcff;
+}
+
+.service__card div {
+  margin-bottom: 1rem;
+  max-width: max-content;
+  padding: 5px 8px;
+  font-size: 1.75rem;
+  border-radius: 5px;
+}
+
+.service__card:nth-child(1) div {
+  color: #00d5be;
+  background-color: #f0fdfa;
+}
+
+.service__card:nth-child(2) div {
+  color: #ff637e;
+  background-color: #fff1f2;
+}
+
+.service__card:nth-child(3) div {
+  color: #c27aff;
+  background-color: #faf5ff;
+}
+
+.service__card:nth-child(4) div {
+  color: #00bcff;
+  background-color: #f0f9ff;
+}
+
+.service__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.service__card .section__description {
+  text-align: left;
+}
+
+.service__btn {
+  display: flex;
+  justify-content: center;
+}
 
 
 
 
 
 
+@media (width > 540px) {
+  .service__grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (width > 768px) {
   nav{
@@ -256,5 +347,17 @@ nav {
   .header__btns {
     justify-content: flex-start;
   }
+  .service__grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
+@media (width > 1024px) {
+  .service__grid {
+    gap: 1.5rem;
+  }
+
+  .feedback__card {
+    padding: 2rem 1.5rem;
+  }
 }

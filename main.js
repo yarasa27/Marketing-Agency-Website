@@ -70,3 +70,11 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 20,
   loop: true,
 });
+
+ScrollReveal().reveal(".subscribe__content .section__header", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".subscribe__content form", {
+  ...scrollRevealOption,
+  delay: 500,
+});
